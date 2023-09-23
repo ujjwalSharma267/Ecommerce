@@ -1,0 +1,631 @@
+/* css overall page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MAIN HEADING */
+/* font chnaged */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* navigation bar design */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* navigation bar list design when vertical  moved to right */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* navigation bar design removing list bullets and amking them in line  */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+/*navigation bar design chnanging the vertical list to horizontal  and spacing  */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* removing the underline from the navigation items */
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* paragraph color changed */
+p {
+    color: #555;
+}
+
+/* main body  dsign,ie.design of the containers element as whole */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+/* design of both the image and the h1 tags inside a div */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* div spread to half */
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+/* image design */
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+/* h1 design */
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/*  button design */
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition-duration: 0.8s;
+    /*hover transition efeect timing*/
+}
+
+/* hoverr effect */
+.btn:hover {
+    background: #563434;
+}
+
+/* changing background color of heading  (radient gradient is a mixture of two color so 2 colors are used */
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/* spacing top of the header  */
+.header.row {
+    margin-top: 70px;
+
+}
+
+
+/* FEATURED  CATEGORIIES SECTION */
+/* categories design */
+.categories {
+    margin: 70px 0;
+
+}
+
+/* changing iamges design  */
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+/* changing size of image */
+.col-3 img {
+    width: 100%;
+}
+
+/*  making the images even smaller and organized */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #fff;
+}
+
+/* FEATUREED PRODUCTS */
+/* product design on image  and organizing the items 4 in a row*/
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition-duration: 0.5s;
+    transition: transform 0.5s;
+    background-color: #fae0e0;
+
+
+
+}
+
+/* product images and rating and price */
+.col-4 img {
+    width: 100%;
+
+}
+
+
+/* LATEST PRODUCTS */
+/* title centre making */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+/* line design to centre and bottom of featured text */
+.title::after {
+    content: '';
+    background: #6e1105;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s;
+}
+
+/*product name change  */
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+/* price size */
+.col-4 p {
+    font-size: 14px;
+}
+
+/* hover effect on product */
+.col-4 :hover {
+    transform: translateY(-5px);
+}
+
+
+/* OFFEER SECTION */
+/* changing the band interface 
+offer*/
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+/* making the band small by giving padding */
+.col-2 .offer-img {
+    padding: 90px;
+}
+
+/* changing price of band color */
+.col-2 h2 {
+    color: #ff523b
+}
+
+/* chnaging the color of the text writen */
+small {
+    color: #555;
+}
+
+
+/* TESTIMONIAL SECTION */
+/* adding space from top by giving padding to testimonial */
+.testimonial {
+    padding-top: 100px;
+}
+
+/* designing the feedback section (testimonial) */
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+    /* shadow to the box*/
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+/* changing the size of  images of the user */
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+/* adding hover property to the testimonial sections */
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+/* desing for the quote symbol over the feedback sentence */
+.fa .fa-quote-left {
+    font-size: 34px;
+    color: #3bffad;
+}
+
+/* deesigning the testimonial texts design */
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+/* changing the color of the band price */
+.col-3 h3 {
+    color: #777;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+/* star colors changing */
+.rating {
+    color: #ff523b;
+}
+
+/*BRANDS SECTION  */
+/* Brands design */
+.brands {
+    margin: 100px auto;
+
+}
+
+/* size of logos */
+.col-5 {
+    width: 160px;
+}
+
+/* images of logo */
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+/* hover for logo */
+.col-5 img:hover {
+    filter: grayscale(0%);
+
+
+}
+
+/* FOOTER */
+/* designing the footer  */
+.footer {
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0;
+
+}
+
+/* coloring the footer paragraph text */
+.footer p {
+    color: #8a8a8a;
+
+}
+
+/* designing the h3 tags */
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* first col width setting using flex basis */
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+/* 2nd col */
+.footer-col-2 {
+    flex: 1;
+    /* use all the available sapce */
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    /* width will be equal for 3 and 4 col with equal size*/
+    text-align: center;
+}
+
+/* removing bullets */
+ul {
+    list-style: none;
+}
+
+/* app logo */
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/* copyright */
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* menu icon */
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    /*adding space from left side*/
+    display: none;
+}
+/* . *............................................................................................................/
+
+/* ALL PRODUCTS PAGE  */
+/* designing the sort dropbox */
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+
+}
+
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/* }button desing for next page */
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+/* spacing btn page button */
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+/* hover  effct on page button */
+.page-btn span:hover {
+    background: #ff523b;
+    color: #fff;
+}
+
+/* ............................................................................................ */
+
+
+
+/* product detail Page */
+/* single product design */
+.single-product {
+    margin-top: 80px;
+}
+/* image sizing */
+.single-product.col-2 img {
+    padding: 0;
+    width: 100%;
+
+}
+/* col 2 padding */
+.single-product .col-2{
+    padding: 20px;
+
+}
+/* text font and peice size change */
+.single-product.col-2 h4{
+    margin: 20px;
+    font-size: 22px;
+    font-weight:bold;
+
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+/* input (button )design */
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+/* input focus */
+input:focus{
+    outline: none;
+}
+  .single-product.fa{
+      color: #ff523b;
+      margin-left: 10px;
+  }
+
+  .small-img-row{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .small-img-col{
+      flex-basis: 24%;
+      cursor: pointer;
+
+  }
+  /* ....................................................................................... */
+  /* cart items details */
+  .cart-page{
+    margin: 80px auto;
+
+  }
+  /* table sizing to full page using widht and border to colapse to full width */
+  table{
+      width: 100%;
+      border-collapse: collapse;
+  }
+  .cart-info{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+  th{
+      text-align: left;
+      padding:5px;
+      color: #fff;
+      background: #ff523b;
+      font-weight: normal;
+  }
+  t{
+      padding: 10px 5px;
+  }
+ td input{
+     width: 40px;
+     height: 30px;
+     padding: 5px;
+
+ }
+ td a{
+     color: #ff523b;
+     font-size: 12px;
+ }
+ td img{
+     width: 80px;
+     height: 80px;
+     margin-right: 10px;
+ }
+
+
+ .total-price{
+     display: flex;
+     justify-content: flex-end;
+ }
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 410px;
+}
+ td :last-child{
+
+    text-align: right;
+}
+th:last-child{
+
+    text-align: right;
+}
+
+
+
+
+
+
+/* media query for menu */
+
+@media only screen and (max-width:800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 50px 10px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+/* media query for less than 600 screen size */
+@media only screen and (max-width:600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2,.col-3,.col-4 {
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+
+    }
+
+ .single-product .col-2{
+     padding-left: 20px 0;
+
+ }
+ .single-product h1{
+     font-size: 26px;
+     line-height: 32px;
+ }
+ .cart-info p{
+     display: none;
+ }
+}
